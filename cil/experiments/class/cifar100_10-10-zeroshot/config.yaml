@@ -1,0 +1,17 @@
+class_order: class_orders/cifar100.yaml
+dataset_root: /mnt/c/Tailieu/HK261/DACN/MoE-Adapters4CL/cil/../datasets/
+workdir: /mnt/c/Tailieu/HK261/DACN/MoE-Adapters4CL/cil
+log_path: metrics.json
+model_name: ViT-B/16
+prompt_template: a bad photo of a {}.
+batch_size: 128
+increment: ${initial_increment}
+initial_increment: 10
+scenario: class
+dataset: cifar100
+weight_decay: 0.0
+l2: 0
+ce_method: 0
+method: zeroshot
+lr: 0.001
+ls: 0.0
